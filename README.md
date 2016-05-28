@@ -22,14 +22,15 @@ sudo apt-get install libstdc++5
 ```
 
 ## Starting installation via .iso file
-* Mount the .iso file
+
+#### Mount the .iso file
   ```
   sudo mkdir /media/virtualCD
   sudo mount FILE_LOCATION.iso /media/virtualCD -t iso9660 -o loop
   ```
   where `FILE_LOCATION` is the .iso file name complete of his location.
 
-* Run `setup` file in .iso and install
+####  Run `setup` file in .iso and install
 
   * Run csh
 
@@ -52,27 +53,27 @@ sudo apt-get install libstdc++5
 
     and follow the graphical installation using defaults settings.
 
-  * Exit the csh shell
+####  Exit the csh shell
   ```
   exit
   ```
 
 ## License server configuration
 
-*  Copy the license file in the License directory of Abaqus and rename it as `ABAQUS.lic`.
+####   Copy the license file in the License directory of Abaqus and rename it as `ABAQUS.lic`.
 
-*  Edit the `ABAQUS.lic` file
+####   Edit the `ABAQUS.lic` file
 ```
 gedit ~/abaqus/License/ABAQUS.lic
 ```
 In the text editor that will be opened, edit the `HOST_NAME` in fist row of the file.
 
-* Create a log file in the License directory
+####  Create a log file in the License directory
 ```
 gedit ~/abaqus/License/ABAQUS.log
 ```
 
-* Edit the .bashrc file in the home.
+####  Edit the .bashrc file in the home.
 ```
 sudo gedit ~/.bashrc
 ```
@@ -86,18 +87,18 @@ alias cae='abaqus cae -mesa'
 ```
 where ACCOUNTNAME is the name of your pc account and PCNAME is the name of your pc.
 
-* Reboot the computer.
+####  Reboot the computer.
 
 ## ABAQUS Product Installation
 
-* Launch the license server:
+####  Launch the license server:
 ```
 abalic
 ```
 
-* Following the graphical installation using defaults settings.
+####  Following the graphical installation using defaults settings.
 
-* Starting ABAQUS Cae
+####  Starting ABAQUS Cae
 ```
 cd ~/abaqusworks
 cae
@@ -105,14 +106,14 @@ cae
 
 ## Compliling subrountines with gfortran
 
-* Install gfortran package:
+####  Install gfortran package:
 ```
 sudo apt-get install gfortran
 ```
 
-* Find ABAQUS setting file `abaqus_v6.env` at `(Abaqus path)/6.14-5/SMA/site/` and make a backup.
+####  Find ABAQUS setting file `abaqus_v6.env` at `(Abaqus path)/6.14-5/SMA/site/` and make a backup.
 
-* Find and change the following parameters(`fortCmd`, `compile_fortran`, `link_sl`) to
+####  Find and change the following parameters(`fortCmd`, `compile_fortran`, `link_sl`) to
 ```
 fortCmd = "gfortran"
 compile_fortran = (fortCmd + ' -c -fPIC -I%I')
@@ -124,7 +125,7 @@ link_sl = (fortCmd +
 Alternative:
 You can also replace your `abaqus_v6.env` file for the file in this repository, and modify the last line with your own license setting like `abaquslm_license_file="27011@PCNAME"`.
 
-* Run the command in terminal
+####  Run the command in terminal
 ```
 abaqus verify -user_std
 ```
