@@ -1,7 +1,7 @@
 # Install ABAQUS 6.14-5 on Ubuntu 16.04 64bit
 
 ## Preparative
-
+-------
 * Install C shell (CSH or TCSH)
 ```
 sodu apt-get update
