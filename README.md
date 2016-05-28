@@ -40,13 +40,15 @@ where `FILE_LOCATION` is the .iso file name complete of his location.
   * Run setup
 
     insert this command in the terminal:
-```
-/media/virtualCD/setup
-```
+     ```
+     /media/virtualCD/setup
+     ```
+
     insert the scratch directory when required:
     ```
     ~/abaqustemp
     ```
+    
     and follow the graphical installation using defaults settings.
 
   * Exit the csh shell
