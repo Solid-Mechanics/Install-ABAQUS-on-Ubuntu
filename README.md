@@ -2,13 +2,13 @@
 
 ## Preparative
 
-- Install C shell (CSH or TCSH)
+- Install C shell (CSH or TCSH).
 
   ```
 sodu apt-get update
 sudo apt-get install csh tcsh
   ```
-- Create the necessary folders
+- Create the necessary folders.
 
   ```
 cd ~
@@ -16,7 +16,7 @@ mkdir ~/abaqus
 mkdir ~/abaqustemp
 mkdir ~/abaqusworks
   ```
-- Install dependent packages
+- Install dependent packages.
 
   ```
 sudo apt-get install libjpeg62
@@ -25,7 +25,7 @@ sudo apt-get install libstdc++5
 
 ## Starting installation via .iso file
 
-- Mount the .iso file
+- Mount the .iso file.
 
   ```
 sudo mkdir /media/virtualCD
@@ -33,7 +33,7 @@ sudo mount FILE_LOCATION.iso /media/virtualCD -t iso9660 -o loop
   ```
   where `FILE_LOCATION` is the .iso file name complete of his location.
 
-- Run `setup` file in .iso and install
+- Run `setup` file in .iso and install.
 
   * Run csh
 
@@ -56,7 +56,7 @@ sudo mount FILE_LOCATION.iso /media/virtualCD -t iso9660 -o loop
 
     and follow the graphical installation using defaults settings.
 
-- Exit the csh shell
+- Exit the csh shell.
 
   ```
 exit
@@ -93,7 +93,7 @@ alias abalic=/home/ACCOUNTNAME/abaqus/License/lmgrd\ -c\ /home/ACCOUNTNAME/abaqu
 alias abaqus='XLIB_SKIP_ARGB_VISUALS=1 /home/ACCOUNTNAME/abaqus/Commands/abaqus'
 alias cae='abaqus cae -mesa'
   ```
-where ACCOUNTNAME is the name of your pc account and PCNAME is the name of your pc.
+where ACCOUNTNAME is the name of your pc account and PCNAME is the name of your PC.
 
 - Reboot the computer.
 
@@ -136,7 +136,7 @@ link_sl = (fortCmd +
 Alternative:
 You can also replace your `abaqus_v6.env` file for the file in this repository, and modify the last line with your own license setting like `abaquslm_license_file="27011@PCNAME"`.
 
-- Run the command in terminal
+- Run the command in terminal.
   
   ```
 abaqus verify -user_std
