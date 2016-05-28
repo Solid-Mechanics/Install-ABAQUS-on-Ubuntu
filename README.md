@@ -2,19 +2,19 @@
 
 ## Preparative
 
-### Install C shell (CSH or TCSH)
+#### Install C shell (CSH or TCSH)
 ```
 sodu apt-get update
 sudo apt-get install csh tcsh
 ```
-### Create the necessary folders
+#### Create the necessary folders
 ```
 cd ~
 mkdir ~/abaqus
 mkdir ~/abaqustemp
 mkdir ~/abaqusworks
 ```
-### Install dependent packages
+#### Install dependent packages
 ```
 sudo apt-get install gnome-session-flashback
 sudo apt-get install libjpeg62
