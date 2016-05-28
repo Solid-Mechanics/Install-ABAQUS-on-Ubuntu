@@ -7,7 +7,6 @@
 sodu apt-get update
 sudo apt-get install csh tcsh
 ```
-
 2. Create the necessary folders
 ```
 cd ~
@@ -29,7 +28,6 @@ sudo mkdir /media/virtualCD
 sudo mount FILE_LOCATION.iso /media/virtualCD -t iso9660 -o loop
 ```
 where `FILE_LOCATION` is the .iso file name complete of his location.
-
 2. Run `setup` file in .iso and install
 
   * Run csh
@@ -58,18 +56,15 @@ where `FILE_LOCATION` is the .iso file name complete of his location.
 ## License server configuration
 
 1.  Copy the license file in the License directory of Abaqus and rename it as `ABAQUS.lic`.
-
 2.  Edit the `ABAQUS.lic` file
 ```
 gedit ~/abaqus/License/ABAQUS.lic
 ```
 In the text editor that will be opened, edit the `HOST_NAME` in fist row of the file.
-
 3. Create a log file in the License directory
 ```
 gedit ~/abaqus/License/ABAQUS.log
 ```
-
 4. Edit the .bashrc file in the home.
 ```
 sudo gedit ~/.bashrc
@@ -83,7 +78,6 @@ alias abaqus='XLIB_SKIP_ARGB_VISUALS=1 /home/ACCOUNTNAME/abaqus/Commands/abaqus'
 alias cae='abaqus cae -mesa'
 ```
 where ACCOUNTNAME is the name of your pc account and PCNAME is the name of your pc.
-
 5. Reboot the computer.
 
 ## ABAQUS Product Installation
@@ -92,9 +86,7 @@ where ACCOUNTNAME is the name of your pc account and PCNAME is the name of your 
 ```
 abalic
 ```
-
 2. following the graphical installation using defaults settings.
-
 3. Starting ABAQUS Cae
 ```
 cd ~/abaqusworks
@@ -107,9 +99,7 @@ cae
 ```
 sudo apt-get install gfortran
 ```
-
 2. Find ABAQUS setting file `abaqus_v6.env` at `(Abaqus path)/6.14-5/SMA/site/` and make a backup.
-
 3. Find and change the following parameters(`fortCmd`, `compile_fortran`, `link_sl`) to
 ```
 fortCmd = "gfortran"
