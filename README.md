@@ -9,18 +9,19 @@ sodu apt-get update
 sudo apt-get install csh tcsh
   ```
 - Create the necessary folders
-```
+
+  ```
 cd ~
 mkdir ~/abaqus
 mkdir ~/abaqustemp
 mkdir ~/abaqusworks
-```
+  ```
 - Install dependent packages
-```
-sudo apt-get install gnome-session-flashback
+
+  ```
 sudo apt-get install libjpeg62
 sudo apt-get install libstdc++5
-```
+  ```
 
 ## Starting installation via .iso file
 
