@@ -33,7 +33,7 @@ where `FILE_LOCATION` is the .iso file name complete of his location.
 
   * Run csh
 
-         csh
+        csh
 
   a csh shell will be opened in your terminal.
 
@@ -41,7 +41,7 @@ where `FILE_LOCATION` is the .iso file name complete of his location.
 
     insert this command in the terminal:
 
-         /media/virtualCD/setup
+        /media/virtualCD/setup
 
     insert the scratch directory when required:
 
