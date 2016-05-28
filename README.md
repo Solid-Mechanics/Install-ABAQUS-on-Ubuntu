@@ -56,7 +56,7 @@ sudo mount FILE_LOCATION.iso /media/virtualCD -t iso9660 -o loop
 
     and follow the graphical installation using defaults settings.
 
-####  Exit the csh shell
+- Exit the csh shell
 
   ```
 exit
@@ -66,14 +66,14 @@ exit
 
 - Copy the license file in the License directory of Abaqus and rename it as `ABAQUS.lic`.
 
-- Edit the `ABAQUS.lic` file
+- Edit the `ABAQUS.lic` file.
 
   ```
 gedit ~/abaqus/License/ABAQUS.lic
   ```
 In the text editor that will be opened, edit the `HOST_NAME` in fist row of the file.
 
-- Create a log file in the License directory
+- Create a log file in the License directory.
 
   ```
 gedit ~/abaqus/License/ABAQUS.log
@@ -107,7 +107,7 @@ abalic
 
 - Following the graphical installation using defaults settings.
 
-- Starting ABAQUS Cae
+- Starting ABAQUS/CAE
 
   ```
 cd ~/abaqusworks
@@ -116,7 +116,7 @@ cae
 
 ## Compliling subrountines with gfortran
 
-- Install gfortran package:\
+- Install gfortran package:
 
   ```
 sudo apt-get install gfortran
