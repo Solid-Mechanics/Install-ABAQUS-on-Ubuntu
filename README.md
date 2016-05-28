@@ -25,14 +25,15 @@ sudo apt-get install libstdc++5
 
 ## Starting installation via .iso file
 
-#### Mount the .iso file
+- Mount the .iso file
+
   ```
-  sudo mkdir /media/virtualCD
-  sudo mount FILE_LOCATION.iso /media/virtualCD -t iso9660 -o loop
+sudo mkdir /media/virtualCD
+sudo mount FILE_LOCATION.iso /media/virtualCD -t iso9660 -o loop
   ```
   where `FILE_LOCATION` is the .iso file name complete of his location.
 
-####  Run `setup` file in .iso and install
+- Run `setup` file in .iso and install
 
   * Run csh
 
